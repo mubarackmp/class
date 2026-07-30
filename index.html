@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Computer Hardware & Software Portfolio</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,Helvetica,sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#eef3f9;
+color:#333;
+}
+
+header{
+background:linear-gradient(90deg,#0d47a1,#1976d2);
+color:white;
+text-align:center;
+padding:30px;
+}
+
+header h1{
+font-size:38px;
+}
+
+nav{
+background:#1565c0;
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+padding:10px;
+position:sticky;
+top:0;
+z-index:100;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+padding:10px 20px;
+margin:5px;
+border-radius:5px;
+transition:.3s;
+}
+
+nav a:hover{
+background:white;
+color:#1565c0;
+}
+
+.container{
+width:90%;
+max-width:1200px;
+margin:auto;
+padding:30px 0;
+}
+
+.card{
+background:white;
+margin-bottom:40px;
+border-radius:15px;
+box-shadow:0 10px 25px rgba(0,0,0,.15);
+overflow:hidden;
+display:flex;
+flex-wrap:wrap;
+}
+
+.image{
+flex:1;
+min-width:280px;
+display:flex;
+align-items:center;
+justify-content:center;
+background:#f4f8fd;
+padding:20px;
+}
+
+.info{
+flex:2;
+padding:30px;
+}
+
+.info h2{
+color:#1565c0;
+margin-bottom:15px;
+}
+
+.info p{
+line-height:1.8;
+margin-bottom:15px;
+}
+
+.info ul{
+margin-left:20px;
+line-height:1.8;
+}
+
+svg{
+width:250px;
+height:220px;
+}
+
+.tag{
+display:inline-block;
+background:#1976d2;
+color:white;
+padding:6px 12px;
+margin:5px;
+border-radius:20px;
+font-size:14px;
+}
+
+
+button{
+    background:#0077cc;
+    color:white;
+    border:none;
+    padding:10px 18px;
+    border-radius:6px;
+    cursor:pointer;
+    margin-top:10px;
+}
+button:hover{
+background:#0d47a1;
+}
+
+.quiz{
+    text-align:center;
+}
+
+.question{
+    font-size:20px;
+    margin:20px;
+}
+
+.option{
+    display:block;
+    margin:10px auto;
+    width:250px;
+    padding:12px;
+}
+
+.result{
+    font-size:22px;
+    margin-top:20px;
+    font-weight:bold;
+}
+
+footer{
+background:#0d47a1;
+color:white;
+text-align:center;
+padding:20px;
+}
+
+@media(max-width:800px){
+.card{
+flex-direction:column;
+}
+}
+</style>
+
+</head>
+<body>
+
+<header>
+<h1>Computer Hardware & Software Portfolio</h1>
+<p>Educational Showcase</p>
+</header>
+
+<nav>
+<a href="#cpu">CPU</a>
+<a href="#ram">RAM</a>
+<a href="#hdd">Storage</a>
+<a href="#ports">Ports</a>
+<a href="#system">System Software</a>
+<a href="#application">Application Software</a>
+</nav>
+
+<div class="container">
+
+<!-- CPU -->
+<section id="cpu" class="card">
+
+<div class="image">
+
+<img src="https://plus.unsplash.com/premium_photo-1681426698212-53e47fec9a2c?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Y3B1fGVufDB8fDB8fHww"
+     alt="CPU"
+     width="300" height="250">
+</div>
+
+<div class="info">
+<h2>Central Processing Unit (CPU)</h2>
+
+<span class="tag">Brain of the Computer</span>
+
+<p>
+The CPU performs all calculations and executes instructions from software.
+It controls every operation performed by the computer.
+</p>
+
+<h3>Functions</h3>
+
+<ul>
+<li>Executes program instructions</li>
+<li>Performs arithmetic calculations</li>
+<li>Controls computer operations</li>
+<li>Communicates with RAM and storage</li>
+</ul>
+
+<button onclick="alert('CPU: Performs calculations and controls the computer.')">
+Learn More
+</button>
+
+</div>
+
+</section>
+
+<!-- RAM -->
+
+<section id="ram" class="card">
+
+<div class="image">
+<img src="https://plus.unsplash.com/premium_photo-1764702084658-c3ce27fdd962?q=80&w=1011&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+     alt="RAM"
+     width="300" height="250">
+</div>
+
+
+
+<div class="info">
+
+<h2>Random Access Memory (RAM)</h2>
+
+<span class="tag">Temporary Memory</span>
+
+<p>
+RAM temporarily stores data used by currently running programs.
+More RAM allows better multitasking.
+</p>
+
+<ul>
+<li>Temporary storage</li>
+<li>Fast data access</li>
+<li>Supports multitasking</li>
+<li>Data is lost after shutdown</li>
+</ul>
+
+<button onclick="alert('RAM stores data temporarily while programs are running.')">
+Learn More
+</button>
+
+</div>
+
+</section>
+
+<!-- STORAGE -->
+
+<section id="hdd" class="card">
+
+<div class="image">
+
+<img src="https://images.unsplash.com/photo-1703756291643-df456ffc8079?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+     alt="HDD"
+     width="250" height="250">
+<img src="https://images.unsplash.com/photo-1720048170016-751876b1dba0?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+     alt="SDD"
+     width="200" height="250">
+     
+
+</div>
+
+<div class="info">
+
+<h2>HDD / SSD Storage</h2>
+
+<span class="tag">Permanent Storage</span>
+
+<p>
+Storage devices save files permanently. HDD uses spinning disks,
+while SSD uses flash memory and is much faster.
+</p>
+
+<ul>
+<li>Stores Windows/Linux</li>
+<li>Stores documents</li>
+<li>Stores photos and videos</li>
+<li>Keeps data after power off</li>
+</ul>
+
+<button onclick="alert('SSD is much faster than HDD.')">
+Compare HDD & SSD
+</button>
+
+</div>
+
+</section>
+
+<!-- PORTS -->
+
+<section id="ports" class="card">
+
+<div class="image">
+
+<img src="https://images.unsplash.com/photo-1606454175560-cf84429c3fcd?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+     alt="HDD"
+     width="350" height="300">
+
+
+
+</div>
+
+<div class="info">
+
+<h2>Peripheral Ports</h2>
+
+<p>
+Ports connect external devices to the computer.
+</p>
+
+<ul>
+<li>USB – Keyboard, Mouse, Flash Drive</li>
+<li>HDMI – Monitor or Projector</li>
+<li>Ethernet – Internet Connection</li>
+<li>Audio – Speakers & Headphones</li>
+</ul>
+
+</div>
+
+</section>
+
+<!-- SYSTEM SOFTWARE -->
+
+<section id="system" class="card">
+
+<div class="info" style="width:100%;">
+
+<h2>System Software</h2>
+
+<p>
+System software manages computer hardware and provides a platform for application software.
+</p>
+
+<ul>
+<li>Windows</li>
+<li>Linux</li>
+<li>macOS</li>
+<li>Android</li>
+<li>Device Drivers</li>
+<li>BIOS / UEFI</li>
+</ul>
+
+
+
+</div>
+<div class="image">
+
+<img src="https://images.unsplash.com/photo-1770278829720-bfb3e8a231c7?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+     alt="windows"
+     width="300" height="250">
+
+
+
+</div>
+<div class="image">
+
+<img src="https://news.microsoft.com/source/asia/wp-content/uploads/2025/08/Windows-11_Hero-Bloom-Logo-1024x576.png"
+     alt="windows"
+     width="300" height="250">
+
+
+
+</div>
+<div class="image">
+
+<img src="https://www.itarian.com/blog/wp-content/uploads/2025/07/what-is-mac-os.png"
+     alt="macos"
+     width="300" height="250">
+
+
+
+</div>
+
+<div class="image">
+
+<img src="https://d15shllkswkct0.cloudfront.net/wp-content/blogs.dir/1/files/2014/02/Android1-300x267.jpg"
+     alt="android"
+     width="350" height="300">
+
+
+
+</div>
+<div class="image">
+
+<img src="https://linux-desktop.net/wp-content/uploads/2020/05/login.jpg"
+     alt="ubuntu"
+     width="350" height="300">
+
+
+
+</div>
+<div class="image">
+
+<img src="https://docs.oracle.com/cd/E23161_01/html/E37044/figures/mblegacyboot.jpg"
+     alt="BIOS"
+     width="350" height="300">
+
+
+
+</div>
+</section>
+
+<!-- APPLICATION SOFTWARE -->
+
+<section id="application" class="card">
+
+<div class="info" style="width:100%;">
+
+<h2>Application Software</h2>
+
+<p>
+Application software helps users perform specific tasks.
+</p>
+
+<ul>
+<li>Microsoft Word</li>
+<li>Microsoft Excel</li>
+<li>Google Chrome</li>
+<li>Adobe Photoshop</li>
+<li>Zoom</li>
+<li>VLC Media Player</li>
+</ul>
+<div class="image">
+<img src="https://images.unsplash.com/photo-1655196601100-8bfb26cf99e9?q=80&w=1331&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+     alt="Apps"
+     width="350" height="300">
+
+<img src="https://linux-desktop.net/wp-content/uploads/2020/05/apps.jpg.pagespeed.ce.LIgoUwDpT8.jpg"
+     alt="Apps"
+     width="350" height="300">
+<img src="https://nikkichapple.com/wp-content/uploads/2024/01/Microsoft-365-apps-768x432.png"
+     alt="Apps"
+     width="350" height="300">
+</div>
+</div>
+
+
+</section>
+
+<div class="card quiz">
+
+<h2>Quick Quiz</h2>
+
+<div class="question" id="question"></div>
+
+<button class="option" onclick="checkAnswer(this)"></button>
+<button class="option" onclick="checkAnswer(this)"></button>
+<button class="option" onclick="checkAnswer(this)"></button>
+
+<div class="result" id="result"></div>
+
+<button onclick="nextQuestion()">Next Question</button>
+
+</div>
+
+
+</div>
+
+<footer>
+Computer Hardware & Software Portfolio
+</footer>
+
+<script>
+
+function showInfo(id){
+
+const text={
+
+cpu:"CPU (Central Processing Unit): Executes instructions and performs calculations.",
+
+ram:"RAM (Random Access Memory): Temporary memory used while programs are running.",
+
+storage:"HDD/SSD: Stores the operating system, applications, and user files permanently.",
+
+ports:"Peripheral Ports: USB, HDMI, Ethernet, Audio ports connect external devices."
+
+};
+
+document.getElementById(id).innerHTML=text[id];
+
+}
+
+const quiz=[
+
+{
+q:"Which component is called the brain of the computer?",
+options:["CPU","RAM","SSD"],
+answer:"CPU"
+},
+
+{
+q:"Which device stores data permanently?",
+options:["RAM","SSD","CPU"],
+answer:"SSD"
+},
+
+{
+q:"Which software is a System Software?",
+options:["Windows","Microsoft Word","Photoshop"],
+answer:"Windows"
+},
+
+{
+q:"Which software is an Application Software?",
+options:["Linux","Windows","Google Chrome"],
+answer:"Google Chrome"
+},
+
+{
+q:"Which port is commonly used to connect a keyboard?",
+options:["USB","HDMI","Audio"],
+answer:"USB"
+}
+
+];
+
+let current=0;
+
+function loadQuestion(){
+
+document.getElementById("question").innerHTML=quiz[current].q;
+
+let btns=document.querySelectorAll(".option");
+
+quiz[current].options.forEach((o,i)=>{
+
+btns[i].innerHTML=o;
+
+});
+
+document.getElementById("result").innerHTML="";
+
+}
+
+function checkAnswer(btn){
+
+if(btn.innerHTML===quiz[current].answer){
+
+document.getElementById("result").style.color="green";
+
+document.getElementById("result").innerHTML="✔ Correct!";
+
+}else{
+
+document.getElementById("result").style.color="red";
+
+document.getElementById("result").innerHTML="✖ Incorrect";
+
+}
+
+}
+
+function nextQuestion(){
+
+current++;
+
+if(current>=quiz.length){
+
+current=0;
+
+}
+
+loadQuestion();
+
+}
+
+loadQuestion();
+
+</script>
+
+</body>
+</html>
